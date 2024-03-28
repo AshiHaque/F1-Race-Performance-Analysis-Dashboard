@@ -1,0 +1,2 @@
+# F1 Race Performance Analysis Dashboard
+ This project offers a comprehensive analysis of Formula 1 race data using Python. It provides scripts to explore various aspects of Formula 1, including information about circuits, drivers, and constructors. Users can select specific circuits, drivers, or constructors to retrieve detailed statistics such as total races held, total winners, most successful drivers, and most successful constructors. The project aims to provide insights into Formula 1 race performance through data visualization and analysis.
