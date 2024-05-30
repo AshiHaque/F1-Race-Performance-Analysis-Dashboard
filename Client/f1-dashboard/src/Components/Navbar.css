@@ -32,17 +32,24 @@
 }
 
 .navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
+.navbar-custom .nav-title-link,
+.navbar-custom .nav-link-custom {
   color: #fff;
+  text-decoration: none;
 }
 
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .nav-link:hover{
+.navbar-custom .nav-title-link:hover,
+.navbar-custom .nav-link-custom:hover {
   color: red;
 }
 
-.navbar-custom .nav-link {
+.navbar-custom .nav-link-custom {
   margin-right: 15px;
+}
+
+.navbar-custom .nav-link-custom.active {
+  color: red;
 }
 
 @media (max-width: 768px) {
@@ -58,7 +65,7 @@
     justify-content: center;
   }
 
-  .navbar-custom .nav-link {
+  .navbar-custom .nav-link-custom {
     color: #fff;
     margin-right: 0;
     text-align: center;

@@ -1,23 +1,23 @@
 import './App.css';
 import React from 'react';
-import Circuits from './Pages/Circuit';
-import Homepage from './Pages/Homepage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from './Pages/Homepage';
+import CircuitsComponent from './Pages/Circuit';
+import CustomNavbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
-
-function App() {
-
-
-
-  
-
+export default function App() {
   return (
-    <div className="App">
-
-      <Homepage></Homepage>
-      
-    </div>
+    <BrowserRouter>
+      <CustomNavbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/circuits" element={<CircuitsComponent />} />
+        {/* <Route path="/constructors" element={<Constructors />} /> */}
+        {/* <Route path="/drivers" element={<Drivers />} /> */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -21,7 +21,7 @@
   text-align: left;
   width: 55%; /* Reduced width to push images to the right */
   height: calc(100vh - 80px); /* Adjust height to take full page height minus navbar and footer */
-  font-size: 90px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;

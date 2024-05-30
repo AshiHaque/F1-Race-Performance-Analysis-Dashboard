@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
-import repo from '../Images/Repo.png';
-import linkedin from '../Images/In.png';
-import email from '../Images/Mail.png';
-import git from '../Images/Git.png';
+import repo from '../Images/Logos/Repo.png';
+import linkedin from '../Images/Logos/In.png';
+import email from '../Images/Logos/Mail.png';
+import git from '../Images/Logos/Git.png';
 import { Navbar, Nav } from 'react-bootstrap';
 
 const Footer = () => {

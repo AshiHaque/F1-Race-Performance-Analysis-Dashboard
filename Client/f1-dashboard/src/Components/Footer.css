@@ -1,8 +1,9 @@
 .footer-custom {
   background-color: #212529;
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
+  position: sticky;
 }
 
 .footer-content {
