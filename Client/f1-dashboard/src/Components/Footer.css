@@ -1,0 +1,40 @@
+.footer-custom {
+  background-color: #212529;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-middle {
+  font-weight: bold;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Add space between the icons */
+}
+
+.footer-image img {
+  display: block;
+  margin: 0 auto;
+}

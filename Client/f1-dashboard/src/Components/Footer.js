@@ -1,47 +1,65 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Navbar from 'react-bootstrap/Navbar';
+import './Footer.css';
+import repo from '../Images/Repo.png';
+import linkedin from '../Images/In.png';
+import email from '../Images/Mail.png';
+import git from '../Images/Git.png';
+import { Navbar, Nav } from 'react-bootstrap';
 
-function Footer() {
+const Footer = () => {
   return (
-    <div style={{ paddingTop: "50px" }}>
-    <footer id="footer" style={{ backgroundColor: "#238b76", flex: '0 0 50px', marginTop: 'auto' }}>
-      <Navbar expand="md" variant="dark" className="justify-content-center">
-        <Navbar.Brand 
-          className="text-white font-weight-bold" 
-          style={{ 
-            borderBottom: '2px solid white', 
-            paddingBottom: '3px' 
-          }}
-        >
-          Fake News Detection Web Application
-        </Navbar.Brand>
-      </Navbar>
-      <Container fluid="md" className="py-3" style={{ maxWidth: '800px' }}>
-        <Row>
-          <Col md={4}>
-            <h5 className="text-white">About the project</h5>
-            <p className="text-white">This web application is a FYP for Final year Computer Science (Artificial Intelligence)</p>
-          </Col>
-          <Col md={4}>
-            <h5 className="text-white">Student Name</h5>
-            <p className="text-white">Mir Ashiful Haque (1934196)</p>
-          </Col>
-          <Col md={4}>
-            <h5 className="text-white">Contacts</h5>
-            <p className="text-white">Github: <br/>ashi.haque<br/>Linkedin:<br/><a style={{ color: "white"}} href=" https://www.linkedin.com/in/mirashifulhaque/">mirashifulhaque</a><br/>Email: mirashifulhaque@gmail.com</p>
-          </Col>
-        </Row>
-        <hr className="bg-white"/>
-        <p className="text-center text-white d-none d-md-block">Copyright &copy;
-          {new Date().getFullYear()} Fake News Detection Web Application
-        </p>
-      </Container>
+    <footer className="footer-custom">
+      <div className="footer-content">
+        <div className="footer-section">
+          <div className="footer-title">About the project</div>
+          <Navbar.Brand href="https://github.com/AshiHaque/F1-Race-Performance-Analysis-Dashboard" className="footer-image">
+            <img
+              src={repo}
+              width="30"
+              height="30" 
+              alt="Repository link Logo"
+            />
+          </Navbar.Brand>
+        </div>
+      
+        <div className="footer-section footer-middle">
+          F1 Data Analysis Dashboard
+        </div>
+        
+        <div className="footer-section">
+          <div className="footer-title">Contact Me</div>
+          <div className="footer-icons">
+            <Navbar.Brand href="https://www.linkedin.com/in/mirashifulhaque/" className="footer-image">
+              <img
+                src={linkedin}
+                width="30"
+                height="30" 
+                alt="Linkedin Profile Logo"
+              />
+            </Navbar.Brand>
+
+            <Navbar.Brand href="mailto:mirashifulhaque@gmail.com" className="footer-image">
+              <img
+                src={email}
+                width="30"
+                height="30" 
+                alt="Email Logo"
+              />
+            </Navbar.Brand>
+
+            <Navbar.Brand href="https://github.com/AshiHaque" className="footer-image">
+              <img
+                src={git}
+                width="30"
+                height="30" 
+                alt="Github Portfolio Logo"
+              />
+            </Navbar.Brand>
+          </div>
+        </div>
+      </div>
     </footer>
-    </div>
   );
-}
+};
 
 export default Footer;
